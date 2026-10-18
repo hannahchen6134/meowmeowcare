@@ -209,7 +209,7 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
 .a-hero h1 span.headline-dot{display:inline;color:var(--caramel);font-size:.82em;margin-inline:.1em;vertical-align:.04em}
 .hero-page{transform-origin:62% 50%}
 .hero-mascot{left:-2%;bottom:1%;width:53%;height:auto;aspect-ratio:1;background:url("hero-cat-leaves-original-cutout.png") center/contain no-repeat;filter:drop-shadow(0 0 9px rgba(255,252,247,.9)) drop-shadow(0 0 22px rgba(199,156,111,.28)) drop-shadow(0 8px 10px rgba(90,56,37,.08))}
-@media(max-width:760px){.container{width:calc(100% - 64px)}.a-hero-grid{padding:44px 0 40px}.a-hero h1{font-size:clamp(28px,7.2vw,36px)}.hero-illustration{width:min(100%,420px)}.hero-mascot{left:-2%;bottom:1%;width:53%;height:auto}}
+@media(max-width:760px){.container{width:calc(100% - 64px)}.a-hero-grid{padding:44px 0 28px}.a-hero h1{font-size:clamp(26px,6.9vw,28px);line-height:1.32}.hero-illustration{width:min(100%,420px)}.hero-mascot{left:-2%;bottom:1%;width:53%;height:auto}}
 @media(max-width:390px){.a-hero h1{font-size:clamp(24px,7vw,27px)}}
 @media(prefers-reduced-motion:reduce){.hero-mascot{opacity:1!important;transform:none!important}}
 .hero-illustration.is-active .hero-mascot{animation:mascotSettle 760ms var(--ease-enter) both,heroMascotBreath 3.8s ease-in-out 760ms infinite}
@@ -373,23 +373,33 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
 .pricing-cta .button.primary{background:#8C6246;border-color:#8C6246;box-shadow:none}
 .pricing-cta .button.primary:hover{background:#79523A;border-color:#79523A;box-shadow:none}
 @media(max-width:760px){
-  .pricing-hero{padding:40px 0 22px}
-  .pricing-hero h1{font-size:26px;line-height:1.55}
+  .pricing-hero{padding:32px 0 18px}
+  .pricing-hero h1{font-size:26px;line-height:1.36}
   .pricing-hero .lead{font-size:14px;line-height:1.7}
-  .pricing-section{padding:22px 0 40px}
-  .plan-col-feature{width:36%}.plan-col-free{width:27%}.plan-col-plus{width:37%}
-  .plan-table{font-size:12px;line-height:1.55}
-  .plan-table th,.plan-table td{padding:11px 9px}
-  .plan-table thead th{height:auto;min-height:126px;padding:12px 9px}
-  .plan-table .plan-feature-head{font-size:11px}
-  .plan-name{font-size:13px;margin-bottom:7px}
-  .plan-table thead strong{font-size:21px}
+  .pricing-section{padding:16px 0 32px}
+  .plan-table{display:block;font-size:13px;line-height:1.55}
+  .plan-table thead{display:block;padding:10px}
+  .plan-table thead tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .plan-table thead th{display:block;height:auto;min-height:0;padding:12px;border:1px solid #E7D7C3;border-radius:12px;vertical-align:top}
+  .plan-table thead th:first-child{display:none}
+  .plan-table .plan-free-head{background:#F8EEDD}
+  .plan-table .plan-plus-head{border-color:#865D40;background:#865D40}
+  .plan-table .plan-name{font-size:13px;line-height:1.45}
+  .plan-table thead strong{margin-top:7px;font-size:21px}
   .plan-table thead small{font-size:11px}
-  .plan-table tbody th{font-size:12px}
-  .plan-table .plan-status-cell{text-align:center}
-  .plan-status{width:20px;height:20px}
-  .plan-table tbody small{display:block;margin-top:3px;font-size:11px}
-  .plan-table .plan-group th{padding:8px 9px;font-size:11px}
+  .plan-table tbody{display:block;padding:0 14px}
+  .plan-table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;padding:12px 0;border-bottom:1px solid #E7D7C3}
+  .plan-table tbody tr.plan-group{display:block;margin:7px -14px 0;padding:11px 14px 6px;border-bottom:1px solid #D1B79A;background:#F8EEDD}
+  .plan-table .plan-group th{display:block;padding:0;border:0;background:transparent;font-size:12px;line-height:1.5}
+  .plan-table tbody th[scope="row"]{grid-column:1/-1;padding:0 0 8px;border:0;font-size:13px;line-height:1.5}
+  .plan-table tbody td{display:flex;min-width:0;align-items:center;gap:7px;padding:0;border:0;font-size:12px;line-height:1.5}
+  .plan-table tbody td::before{flex:0 0 auto;color:#796858;font-size:10px;line-height:1.35;content:attr(data-plan)}
+  .plan-table tbody td.plan-status-cell{justify-content:flex-start;text-align:left}
+  .plan-table .plan-status-cell .plan-status{width:17px;height:17px;flex:0 0 auto;margin:0}
+  .plan-table .plan-status-detail{flex-wrap:wrap}
+  .plan-table .plan-status-detail small{flex-basis:100%;margin:0 0 0 52px;font-size:10px}
+  .plan-table tbody small{font-size:10px}
+  .plan-table tbody tr:last-child{border-bottom:0}
   .pricing-footnote{margin-top:13px;font-size:12px}
   .pricing-cta{padding:38px 0 44px}
   .pricing-cta h2{font-size:20px}
@@ -439,8 +449,9 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
 .faq-group h2{margin:0 0 6px;font-size:20px;line-height:1.45}
 .faq-group .faq-list{border:0}
 .faq-group details{padding:15px 0;border-bottom-color:var(--line-soft)}
-.faq-group summary{font-size:16px;line-height:1.55}
-.faq-group details p{margin:10px 36px 2px 0;font-size:14px;line-height:1.75}
+.faq-group summary{font-size:16px;font-weight:500;line-height:1.55}
+.faq-group details[open]>summary{font-weight:600}
+.faq-group details p{margin:11px 0 2px;padding:10px 12px;border-radius:8px;background:rgba(255,252,247,.72);font-size:14px;line-height:1.75}
 .a-index{font-size:12px;letter-spacing:.12em}
 .a-hero .button.primary{background:var(--caramel-dark);border-color:var(--caramel-dark);box-shadow:0 4px 12px rgba(90,56,37,.12)}
 @media(max-width:760px){
@@ -452,17 +463,14 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
   .feature-groups .feature-item h3{font-size:17px}
   .feature-groups .feature-item p{font-size:14px;line-height:1.75}
   .feature-status-note{margin-top:24px;padding:12px 14px}
-  .faq-groups{gap:27px}
-  .faq-group h2{font-size:18px}
-  .faq-group details{padding:14px 0}
-  .faq-group summary{font-size:15px}
-  .faq-group details p{margin-right:24px;font-size:13px}
+  .faq-page .page-hero{padding:32px 0 24px}
+  .faq-page .page-hero h1{font-size:26px;line-height:1.36}
+  .faq-groups{gap:22px}
+  .faq-group h2{margin-bottom:9px;font-size:18px;line-height:1.4}
+  .faq-group details{padding:13px 0}
+  .faq-group summary{font-size:16px;line-height:1.5}
+  .faq-group details p{font-size:14px;line-height:1.7}
   .pricing-hero .container,.pricing-section .container,.pricing-cta .container{width:calc(100% - 64px)}
-  .plan-col-feature{width:42%}.plan-col-free{width:25%}.plan-col-plus{width:33%}
-  .plan-table th,.plan-table td{padding:10px 7px}
-  .plan-table tbody th{font-size:12px;line-height:1.5}
-  .plan-table .plan-name{font-size:12px;line-height:1.45}
-  .plan-table .plan-status-cell .plan-status{width:18px;height:18px}
 }
 
 /* Consistent reading hierarchy across inner pages. */
@@ -472,7 +480,9 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
 .faq-category-icon{flex:0 0 42px;width:42px;height:42px;padding:0;border-radius:12px;object-fit:contain}
 @media(max-width:760px){
   .page-hero h1,.tutorial-hero h1,.pricing-hero h1,.getting-started-page .tutorial-hero h1{font-size:clamp(28px,7.4vw,32px);line-height:1.42}
+  .faq-page .page-hero h1,.pricing-hero h1{font-size:26px;line-height:1.36}
   .prose h2{font-size:24px;line-height:1.45;margin-top:42px;margin-bottom:14px}
-  .faq-group h2{font-size:20px}
+  .faq-group h2{font-size:18px;line-height:1.4}
   .faq-group details p,.feature-groups .feature-item p{font-size:14px}
+  .faq-page .section{padding-top:30px}
 }
