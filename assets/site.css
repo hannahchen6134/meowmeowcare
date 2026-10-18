@@ -486,3 +486,24 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
   .faq-group details p,.feature-groups .feature-item p{font-size:14px}
   .faq-page .section{padding-top:30px}
 }
+
+/* FAQ: bring the first useful content closer and keep each answer with its question. */
+.faq-page .page-hero{padding:56px 0 36px}
+.faq-page main>.section:first-of-type{padding-top:38px}
+.faq-page .faq-groups{gap:28px}
+.faq-page .faq-group h2{margin-bottom:8px}
+.faq-page .faq-group details{padding:12px 0}
+.faq-page .faq-group details p{margin:8px 0 0;padding:8px 0 8px 12px;border-left:1px solid var(--line);border-radius:0;background:transparent;line-height:1.75}
+.faq-page .faq-group summary::after{content:"";flex:0 0 14px;width:14px;height:14px;color:var(--caramel-dark);background:linear-gradient(currentColor,currentColor) center/12px 1.5px no-repeat,linear-gradient(currentColor,currentColor) center/1.5px 12px no-repeat;transform:none;transition:background var(--standard) var(--ease)}
+.faq-page .faq-group details[open]>summary::after{background:linear-gradient(currentColor,currentColor) center/12px 1.5px no-repeat;transform:none}
+
+/* Pricing table: keep the feature label distinct and align it with plan names. */
+.plan-table .plan-feature-head{vertical-align:top;background:transparent}
+@media(max-width:760px){
+  .faq-page .page-hero{padding:24px 0 18px}
+  .faq-page main>.section:first-of-type{padding-top:18px}
+  .faq-page .faq-groups{gap:20px}
+  .faq-page .faq-group h2{margin-bottom:8px}
+  .faq-page .faq-group details{padding:12px 0}
+  .plan-table thead th:first-child{align-items:flex-start;padding:9px 5px;border:0;border-radius:0;background:transparent;font-size:14px}
+}
