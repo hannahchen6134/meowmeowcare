@@ -17,7 +17,7 @@ links?.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMe
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu()});
 
 document.querySelector('.a-hero-copy')?.classList.add('motion-copy');
-const revealSelectors=['.page-hero > .container','.section > .container','.final-cta > .container','.home-directory'];
+const revealSelectors=['.page-hero > .container','.section > .container','.final-cta > .container'];
 document.querySelectorAll(revealSelectors.join(',')).forEach(element=>element.classList.add('motion-reveal'));
 document.querySelectorAll('.feature-list,.pricing-grid,.steps,.footer-grid').forEach(group=>{
   group.classList.add('motion-group');

@@ -209,7 +209,7 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
 .a-hero h1 span.headline-dot{display:inline;color:var(--caramel);font-size:.82em;margin-inline:.1em;vertical-align:.04em}
 .hero-page{transform-origin:62% 50%}
 .hero-mascot{left:-2%;bottom:1%;width:53%;height:auto;aspect-ratio:1;background:url("hero-cat-leaves-original-cutout.png") center/contain no-repeat;filter:drop-shadow(0 0 9px rgba(255,252,247,.9)) drop-shadow(0 0 22px rgba(199,156,111,.28)) drop-shadow(0 8px 10px rgba(90,56,37,.08))}
-@media(max-width:760px){.container{width:calc(100% - 64px)}.a-hero-grid{padding:44px 0 23px}.a-hero h1{font-size:clamp(26px,6.9vw,28px);line-height:1.32}.hero-illustration{width:min(100%,420px)}.hero-mascot{left:-2%;bottom:1%;width:53%;height:auto}}
+@media(max-width:760px){.container{width:calc(100% - 64px)}.a-hero-grid{padding:44px 0 19px}.a-hero h1{font-size:clamp(26px,6.9vw,28px);line-height:1.32}.hero-illustration{width:min(100%,420px)}.hero-mascot{left:-2%;bottom:1%;width:53%;height:auto}}
 @media(max-width:390px){.a-hero h1{font-size:clamp(24px,7vw,27px)}}
 @media(prefers-reduced-motion:reduce){.hero-mascot{opacity:1!important;transform:none!important}}
 .hero-illustration.is-active .hero-mascot{animation:mascotSettle 760ms var(--ease-enter) both,heroMascotBreath 3.8s ease-in-out 760ms infinite}
