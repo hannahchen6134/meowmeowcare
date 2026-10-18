@@ -551,5 +551,5 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
   .faq-page .faq-group h2{margin-bottom:8px}
   .faq-page .faq-group details{padding:0}
   .faq-page .faq-group summary{align-items:center;min-height:44px;font-size:15px;line-height:1.5}
-  .faq-page .faq-group details p{margin:0 0 6px;padding:0 0 5px 10px;border:0;border-left:1px solid var(--line);border-radius:0;background:transparent;font-size:14px;line-height:1.7}
+  .faq-page .faq-group details p{margin:-6px 0 6px;padding:0 0 5px 10px;border:0;border-left:1px solid var(--line);border-radius:0;background:transparent;font-size:14px;line-height:1.7}
 }
