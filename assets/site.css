@@ -507,3 +507,38 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
   .faq-page .faq-group details{padding:12px 0}
   .plan-table thead th:first-child{align-items:flex-start;padding:9px 5px;border:0;border-radius:0;background:transparent;font-size:14px}
 }
+
+/* Mobile comparison: align the feature and plan columns so each check has a clear home. */
+@media(max-width:760px){
+  .faq-page .page-hero{padding:22px 0 16px}
+  .faq-page .page-hero h1{font-size:clamp(25px,6.6vw,29px);line-height:1.36}
+  .faq-page .page-hero .lead{font-size:15px;line-height:1.7}
+  .faq-page main>.section:first-of-type{padding-top:16px}
+  .faq-page .faq-groups{gap:18px}
+  .faq-page .faq-group h2{gap:10px;margin-bottom:6px;font-size:17px;line-height:1.4}
+  .faq-page .faq-category-icon{flex-basis:34px;width:34px;height:34px}
+  .faq-page .faq-group details{padding:8px 0}
+  .faq-page .faq-group summary{min-height:44px;gap:10px;font-size:16px;line-height:1.5}
+  .faq-page .faq-group details p{margin:5px 0 2px;padding:9px 11px;border:1px solid var(--line-soft);border-radius:9px;background:rgba(255,252,247,.72);font-size:14px;line-height:1.7}
+
+  .pricing-hero h1{font-size:clamp(25px,6.6vw,29px);line-height:1.36}
+  .pricing-hero .lead{font-size:14px;line-height:1.7}
+  .pricing-section .container{width:calc(100% - 40px)}
+  .plan-table{font-size:12px;line-height:1.5}
+  .plan-table thead{padding:10px 8px 0}
+  .plan-table thead tr{grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:0}
+  .plan-table thead th{min-height:0;padding:9px 6px;border-radius:0;line-height:1.4}
+  .plan-table thead th:first-child{align-items:flex-start;justify-content:flex-start;padding:9px 6px 9px 0;border:0;border-right:1px solid var(--line);border-radius:9px 0 0 0;background:#F8EEDD;font-size:12px}
+  .plan-table thead th:nth-child(2){border-left:0;border-radius:0;background:#F8EEDD}
+  .plan-table thead th:nth-child(3){border-radius:0 9px 0 0}
+  .plan-table .plan-name{min-height:2.9em;margin-bottom:4px;font-size:12px;line-height:1.4}
+  .plan-table thead strong{margin-top:3px;font-size:clamp(15px,4.2vw,17px);line-height:1.2;white-space:nowrap;letter-spacing:-.02em}
+  .plan-table thead small{font-size:10px}
+  .plan-table tbody{padding:0 8px}
+  .plan-table tbody tr:not(.plan-group){grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));column-gap:0;padding:0}
+  .plan-table tbody th[scope="row"]{padding:10px 7px 10px 0;border-right:1px solid var(--line);background:rgba(248,238,221,.62);font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+  .plan-table tbody tr:not(.plan-group)>td{min-width:0;padding:8px 4px;border-left:1px solid rgba(140,98,70,.15);background:rgba(255,252,247,.76);font-size:11px;line-height:1.45;overflow-wrap:anywhere}
+  .plan-table tbody tr:not(.plan-group)>td.plan-status-cell{justify-content:center}
+  .plan-table .plan-status-cell .plan-status{width:17px;height:17px}
+  .plan-table tbody tr.plan-group{margin:7px -8px 0;padding:10px 8px 6px}
+}
