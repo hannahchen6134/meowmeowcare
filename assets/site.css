@@ -542,3 +542,10 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
   .plan-table .plan-status-cell .plan-status{width:17px;height:17px}
   .plan-table tbody tr.plan-group{margin:7px -8px 0;padding:10px 8px 6px}
 }
+
+/* FAQ mobile: one compact question row; answers read as a continuation, not a card. */
+@media(max-width:760px){
+  .faq-page .faq-group details{padding:0}
+  .faq-page .faq-group summary{min-height:44px;font-size:15px;line-height:1.5}
+  .faq-page .faq-group details p{margin:4px 0 6px;padding:5px 0 5px 10px;border:0;border-left:1px solid var(--line);border-radius:0;background:transparent;font-size:13px;line-height:1.7}
+}
