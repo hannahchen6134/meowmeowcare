@@ -545,11 +545,12 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
 
 /* FAQ mobile: one compact question row; answers read as a continuation, not a card. */
 @media(max-width:760px){
-  .faq-page .page-hero{padding-bottom:12px}
+  .faq-page .page-hero{padding-bottom:16px}
   .faq-page .page-hero h1{margin-bottom:0}
-  .faq-page main>.section:first-of-type{padding-top:12px}
-  .faq-page .faq-group h2{margin-bottom:8px}
+  .faq-page main>.section:first-of-type{padding-top:16px}
+  .faq-page .faq-groups{gap:24px}
+  .faq-page .faq-group h2{margin-bottom:14px}
   .faq-page .faq-group details{padding:0}
-  .faq-page .faq-group summary{align-items:center;min-height:44px;font-size:15px;line-height:1.5}
-  .faq-page .faq-group details p{margin:-6px 0 6px;padding:0 0 5px 10px;border:0;border-left:1px solid var(--line);border-radius:0;background:transparent;font-size:14px;line-height:1.7}
+  .faq-page .faq-group summary{align-items:center;min-height:48px;font-size:15px;line-height:1.5}
+  .faq-page .faq-group details p{margin:0 0 10px;padding:0 0 8px 10px;border:0;border-left:1px solid var(--line);border-radius:0;background:transparent;font-size:15px;line-height:1.8}
 }
