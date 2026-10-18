@@ -379,25 +379,25 @@ details[open]>:not(summary){animation:detailEnter var(--standard) var(--ease-ent
   .pricing-section{padding:16px 0 32px}
   .plan-table{display:block;font-size:13px;line-height:1.55}
   .plan-table thead{display:block;padding:10px}
-  .plan-table thead tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .plan-table thead th{display:block;height:auto;min-height:0;padding:12px;border:1px solid #E7D7C3;border-radius:12px;vertical-align:top}
-  .plan-table thead th:first-child{display:none}
+  .plan-table thead tr{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:6px}
+  .plan-table thead th{display:block;height:auto;min-width:0;min-height:0;padding:9px 7px;border:1px solid #E7D7C3;border-radius:10px;vertical-align:top}
+  .plan-table thead th:first-child{display:flex;align-items:flex-end;background:#F8EEDD;color:#655346;font-size:11px;line-height:1.4}
   .plan-table .plan-free-head{background:#F8EEDD}
   .plan-table .plan-plus-head{border-color:#865D40;background:#865D40}
   .plan-table .plan-name{font-size:13px;line-height:1.45}
   .plan-table thead strong{margin-top:7px;font-size:21px}
   .plan-table thead small{font-size:11px}
-  .plan-table tbody{display:block;padding:0 14px}
-  .plan-table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;padding:12px 0;border-bottom:1px solid #E7D7C3}
-  .plan-table tbody tr.plan-group{display:block;margin:7px -14px 0;padding:11px 14px 6px;border-bottom:1px solid #D1B79A;background:#F8EEDD}
+  .plan-table tbody{display:block;padding:0 10px}
+  .plan-table tbody tr{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));align-items:center;column-gap:6px;padding:10px 0;border-bottom:1px solid #E7D7C3}
+  .plan-table tbody tr.plan-group{display:block;margin:7px -10px 0;padding:11px 10px 6px;border-bottom:1px solid #D1B79A;background:#F8EEDD}
   .plan-table .plan-group th{display:block;padding:0;border:0;background:transparent;font-size:12px;line-height:1.5}
-  .plan-table tbody th[scope="row"]{grid-column:1/-1;padding:0 0 8px;border:0;font-size:13px;line-height:1.5}
-  .plan-table tbody td{display:flex;min-width:0;align-items:center;gap:7px;padding:0;border:0;font-size:12px;line-height:1.5}
-  .plan-table tbody td::before{flex:0 0 auto;color:#796858;font-size:10px;line-height:1.35;content:attr(data-plan)}
-  .plan-table tbody td.plan-status-cell{justify-content:flex-start;text-align:left}
-  .plan-table .plan-status-cell .plan-status{width:17px;height:17px;flex:0 0 auto;margin:0}
+  .plan-table tbody th[scope="row"]{grid-column:auto;padding:0;border:0;font-size:12px;line-height:1.45}
+  .plan-table tbody td{display:flex;min-width:0;align-items:center;justify-content:center;padding:0;border:0;text-align:center;font-size:11px;line-height:1.45;overflow-wrap:anywhere}
+  .plan-table tbody td::before{display:none}
+  .plan-table tbody td.plan-status-cell{justify-content:center;text-align:center}
+  .plan-table .plan-status-cell .plan-status{width:17px;height:17px;flex:0 0 auto;margin:0 auto}
   .plan-table .plan-status-detail{flex-wrap:wrap}
-  .plan-table .plan-status-detail small{flex-basis:100%;margin:0 0 0 52px;font-size:10px}
+  .plan-table .plan-status-detail small{flex-basis:100%;margin:2px 0 0;text-align:center;font-size:10px}
   .plan-table tbody small{font-size:10px}
   .plan-table tbody tr:last-child{border-bottom:0}
   .pricing-footnote{margin-top:13px;font-size:12px}
